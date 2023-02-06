@@ -1,0 +1,9 @@
+asgiref==3.6.0
+backports.zoneinfo==0.2.1
+Django==4.1.6
+Pillow==9.4.0
+pypng==0.20220715.0
+qrcode==7.4.2
+sqlparse==0.4.3
+typing-extensions==4.4.0
+django-phone-field==1.8.1
