@@ -1,8 +1,13 @@
-# from django.urls import path
-# from .views import UserProfileView
 
-# app_name = 'userprofile'
+from django.urls import path
 
-# urlpatterns = [
-#     path('<str:unique_id>/', UserProfileView.as_view(), name='detail'),
-# ]
+
+app_name = 'users'
+
+# from .views import login_request, DashboardView, logout_view
+
+urlpatterns = [
+    # path('login/', login_request, name='login'),
+    # path('dashboard/', DashboardView.as_view(), name='dashboard'),
+    # path('logout/', logout_view, name='logout'),
+]

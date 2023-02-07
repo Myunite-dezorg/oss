@@ -9,4 +9,5 @@ urlpatterns = [
     path('create/', UserProfileCreateView.as_view(), name='create'),
     path('<str:unique_id>/update/', UserProfileUpdateView.as_view(), name='update'),
     path('<str:unique_id>/delete/', UserProfileDeleteView.as_view(), name='delete'),
+    path('dashboard/', UserProfileDetailView.as_view(), name='dashboard'),
 ]

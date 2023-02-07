@@ -41,6 +41,11 @@ CORE_APPS = [
 
 THIRDPARTY_APPS = [
     'phone_field',
+    'tailwind',
+    'theme',
+    'django_browser_reload',
+    'crispy_forms',
+    "crispy_tailwind",
 ]
 
 PROJECT_APPS = [
@@ -49,9 +54,25 @@ PROJECT_APPS = [
     
 ]
 
+
+
 INSTALLED_APPS = CORE_APPS + THIRDPARTY_APPS + PROJECT_APPS
 
+TAILWIND_APP_NAME = 'theme'
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
+
+CRISPY_TEMPLATE_PACK = "tailwind"
+
+NPM_BIN_PATH = '/usr/local/bin/npm'
+
+
 MIDDLEWARE = [
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',

@@ -1,6 +1,0 @@
-<h1>{{ user_profile.user.first_name }} {{ user_profile.user.last_name }}</h1>
-<p>Unique ID: {{ user_profile.unique_id }}</p>
-<p>Position: {{ user_profile.position }}</p>
-{% if user_profile.image %}
-<img src="{{ user_profile.image.url }}" alt="{{ user_profile.user.first_name }} {{ user_profile.user.last_name }}">
-{% endif %}
